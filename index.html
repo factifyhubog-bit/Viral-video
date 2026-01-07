@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viral Videos - Watch the hottest trending videos, entertainment content, and viral clips. Premium video streaming platform with daily updates.">
+    <meta name="keywords" content="viral videos, trending videos, entertainment, video streaming, hot clips, viral content, video platform, trending entertainment">
+    <meta name="author" content="Viral Videos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Viral Videos - Hottest Trending Entertainment">
+    <meta property="og:description" content="Discover the most viral and trending videos updated daily. Premium entertainment platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viralvideos.com">
+    <meta property="og:image" content="https://viralvideos.com/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Viral Videos - Trending Entertainment">
+    <meta name="twitter:description" content="Watch the hottest viral videos and trending content online.">
+    <meta name="twitter:image" content="https://viralvideos.com/twitter-image.jpg">
+    <link rel="canonical" href="https://viralvideos.com">
+    <title>Viral Videos - Hottest Trending Entertainment Platform | Watch Viral Content</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Viral Videos",
+        "url": "https://viralvideos.com",
+        "description": "Watch the hottest trending videos, entertainment content, and viral clips. Premium video streaming platform with daily updates.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://viralvideos.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Viral Videos",
+            "url": "https://viralvideos.com"
+        }
+    }
+    </script>
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #ff006e;
+            --secondary-color: #8338ec;
+            --accent-color: #06ffa5;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --gradient-1: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
+            --gradient-2: linear-gradient(135deg, #8338ec 0%, #06ffa5 100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 0, 110, 0.3);
+        }
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Slider */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+        .slider {
+            display: flex;
+            width: 500%; /* 5 slides */
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+        .slide {
+            flex: 0 0 100%;
+            position: relative;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 80px;
+            left: 80px;
+            color: white;
+            z-index: 2;
+            max-width: 600px;
+        }
+        .hero-text h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--gradient-1);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 0, 110, 0.4);
+        }
+
+        /* Scroll Section */
+        .scroll-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: var(--gradient-1);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .scroll-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        .scroll-section h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .scroll-section p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding: 80px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--dark-bg);
+        }
+        .video-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid rgba(255, 0, 110, 0.1);
+        }
+        .video-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(255, 0, 110, 0.2);
+            border-color: var(--primary-color);
+        }
+        .video-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover::before {
+            transform: scaleX(1);
+        }
+        .video-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .video-card:hover img {
+            transform: scale(1.1);
+        }
+        .video-card h3 {
+            padding: 25px;
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0;
+        }
+        .video-stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px 25px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .video-stats span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 40px;
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #1a0a1a 100%);
+        }
+        .categories h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 0, 110, 0.2);
+        }
+        .category-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .category-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 40px;
+            background: var(--card-bg);
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: var(--text-primary);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(255, 0, 110, 0.15);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #050505;
+            color: var(--text-secondary);
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 0, 110, 0.2);
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-section h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        footer a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        footer a:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 30px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 20px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .hero {
+                height: 80vh;
+                margin-top: 60px;
+            }
+            .hero-text {
+                left: 20px;
+                bottom: 40px;
+                max-width: 90%;
+            }
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+            .scroll-section h2 {
+                font-size: 2.2rem;
+            }
+            .video-grid {
+                padding: 60px 20px;
+                gap: 30px;
+            }
+            .categories h2, .features h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">Viral Videos</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Features</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="slidepic1.png" alt="Trending Slide 1">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="slidepic2.png" alt="Trending Slide 2">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="slidepic3.png" alt="Trending Slide 3">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="slidepic4.png" alt="Trending Slide 4">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="slidepic5.png" alt="Trending Slide 5">
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+        <div class="hero-text">
+            <h1>Viral Videos</h1>
+            <p>Watch the most trending content right now</p>
+            <a href="#videos" class="cta-button">Explore Videos</a>
+        </div>
+        <!-- Ad placeholder -->
+    </header>
+
+    <section class="scroll-section">
+        <h2>🔥 Trending Now</h2>
+        <p>Discover the hottest viral videos that everyone is talking about. From comedy to entertainment, we've got it all.</p>
+        <a href="#videos" class="cta-button">Watch Now</a>
+    </section>
+
+    <section class="video-grid" id="videos">
+        <h2 style="grid-column: 1/-1; text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: var(--text-primary);">🎬 Featured Videos</h2>
+        <!-- 12 Video Cards with stats -->
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 1" loading="lazy">
+            <h3>Amazing Funny Moments</h3>
+            <div class="video-stats">
+                <span>👁️ 2.3M views</span>
+                <span>❤️ 89K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 2" loading="lazy">
+            <h3>Epic Fail Compilation</h3>
+            <div class="video-stats">
+                <span>👁️ 1.8M views</span>
+                <span>❤️ 67K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 3" loading="lazy">
+            <h3>Cute Animals 2026</h3>
+            <div class="video-stats">
+                <span>👁️ 3.1M views</span>
+                <span>❤️ 124K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 4" loading="lazy">
+            <h3>Street Food Tour</h3>
+            <div class="video-stats">
+                <span>👁️ 1.5M views</span>
+                <span>❤️ 45K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 5" loading="lazy">
+            <h3>Life Hacks You Need</h3>
+            <div class="video-stats">
+                <span>👁️ 2.7M views</span>
+                <span>❤️ 98K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 6" loading="lazy">
+            <h3>Dance Challenge</h3>
+            <div class="video-stats">
+                <span>👁️ 4.2M views</span>
+                <span>❤️ 156K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 7" loading="lazy">
+            <h3>Gaming Highlights</h3>
+            <div class="video-stats">
+                <span>👁️ 1.9M views</span>
+                <span>❤️ 71K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 8" loading="lazy">
+            <h3>Travel Vlog</h3>
+            <div class="video-stats">
+                <span>👁️ 1.3M views</span>
+                <span>❤️ 38K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 9" loading="lazy">
+            <h3>Cooking Recipe</h3>
+            <div class="video-stats">
+                <span>👁️ 2.1M views</span>
+                <span>❤️ 82K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 10" loading="lazy">
+            <h3>Motivational Speech</h3>
+            <div class="video-stats">
+                <span>👁️ 1.6M views</span>
+                <span>❤️ 59K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 11" loading="lazy">
+            <h3>Sports Highlights</h3>
+            <div class="video-stats">
+                <span>👁️ 2.8M views</span>
+                <span>❤️ 103K</span>
+            </div>
+        </div>
+        <div class="video-card">
+            <img src="video.png" alt="Trending Video 12" loading="lazy">
+            <h3>Music Video 2026</h3>
+            <div class="video-stats">
+                <span>👁️ 5.1M views</span>
+                <span>❤️ 201K</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>🎯 Browse Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>😂 Comedy</h3>
+                <p>Funny moments & jokes</p>
+            </div>
+            <div class="category-card">
+                <h3>🎮 Gaming</h3>
+                <p>Gameplays & highlights</p>
+            </div>
+            <div class="category-card">
+                <h3>🎵 Music</h3>
+                <p>Music videos & performances</p>
+            </div>
+            <div class="category-card">
+                <h3>🏃 Sports</h3>
+                <p>Sports highlights & moments</p>
+            </div>
+            <div class="category-card">
+                <h3>🍔 Food</h3>
+                <p>Cooking & food reviews</p>
+            </div>
+            <div class="category-card">
+                <h3>✈️ Travel</h3>
+                <p>Travel vlogs & guides</p>
+            </div>
+            <div class="category-card">
+                <h3>🐾 Animals</h3>
+                <p>Cute & funny animal videos</p>
+            </div>
+            <div class="category-card">
+                <h3>💡 Life Hacks</h3>
+                <p>Tips & tricks for life</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>✨ Why Choose Viral Videos?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p>Buffer-free streaming with our optimized video delivery system for the best viewing experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>Always Trending</h3>
+                <p>Stay updated with the latest viral content updated daily from around the world.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Premium Quality</h3>
+                <p>High-definition videos with crystal clear audio for an immersive entertainment experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Watch anywhere, anytime on any device with our responsive design and mobile apps.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Content</h3>
+                <p>Access viral videos from every corner of the world with multilingual support.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Safe & Secure</h3>
+                <p>Enjoy content in a secure environment with advanced privacy protection.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Viral Videos</h3>
+                <p>Your premium destination for the hottest trending videos and viral content from around the world.</p>
+                <p> 2026 Viral Videos. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#">Home</a></p>
+                <p><a href="#videos">Videos</a></p>
+                <p><a href="#categories">Categories</a></p>
+                <p><a href="#features">Features</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                <p><a href="#">Disclaimer</a></p>
+                <p><a href="#">DMCA</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Support</a></p>
+                <p><a href="#">Advertise</a></p>
+                <p><a href="#">Partners</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> The hottest viral videos platform | Watch trending content daily</p>
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('slider');
+        let currentSlide = 0;
+        const totalSlides = 5;
+        const interval = 3000;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        setInterval(nextSlide, interval);
+        // Initial position
+        slider.style.transform = 'translateX(0)';
+    </script>
+</body>
+</html>
