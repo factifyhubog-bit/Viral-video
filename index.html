@@ -238,10 +238,180 @@
             opacity: 0.9;
         }
 
+        /* Video Player Styles */
+        .video-player {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background: #000;
+            overflow: hidden;
+        }
+        .video-player video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .video-player:hover .video-controls {
+            opacity: 1;
+        }
+        .play-pause-btn {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .progress-filled {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .volume-slider {
+            width: 60px;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        /* Page Sections */
+        .page-section {
+            display: none;
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--dark-bg);
+            min-height: 100vh;
+        }
+        .page-section.active {
+            display: block;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        .page-content {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            line-height: 1.8;
+        }
+        .page-content h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+        }
+        .page-content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 25px 0 10px 0;
+        }
+        .page-content p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .page-content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .page-content li {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 20px;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group textarea {
+            background: var(--dark-bg);
+            border: 1px solid rgba(255, 0, 110, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            justify-self: center;
+        }
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
+        }
+
         /* Video Grid */
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
             padding: 80px 40px;
             max-width: 1400px;
@@ -249,17 +419,18 @@
             background: var(--dark-bg);
         }
         .video-card {
-            background: var(--card-bg);
+            background: linear-gradient(145deg, var(--card-bg), #2a2a2a);
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-            transition: all 0.4s ease;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
-            border: 1px solid rgba(255, 0, 110, 0.1);
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            transform-style: preserve-3d;
         }
         .video-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 25px 60px rgba(255, 0, 110, 0.2);
+            transform: translateY(-20px) rotateX(5deg) scale(1.03);
+            box-shadow: 0 35px 80px rgba(255, 0, 110, 0.3);
             border-color: var(--primary-color);
         }
         .video-card::before {
@@ -268,42 +439,139 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
+            height: 4px;
             background: var(--gradient-1);
             transform: scaleX(0);
-            transition: transform 0.3s ease;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .video-card:hover::before {
             transform: scaleX(1);
         }
-        .video-card img {
+        .video-thumbnail {
+            position: relative;
             width: 100%;
             height: 220px;
+            overflow: hidden;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+        }
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            transition: transform 0.4s ease;
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        .video-card:hover img {
-            transform: scale(1.1);
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.15) rotate(2deg);
         }
-        .video-card h3 {
-            padding: 25px;
-            font-size: 1.4rem;
-            text-align: center;
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 0, 110, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.5);
+        }
+        .play-button::before {
+            content: '▶';
+            color: white;
+            font-size: 20px;
+            margin-left: 3px;
+        }
+        .video-card:hover .play-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .video-duration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
             font-weight: 600;
+        }
+        .video-info {
+            padding: 25px;
+        }
+        .video-title {
+            font-size: 1.4rem;
+            font-weight: 700;
             color: var(--text-primary);
-            margin: 0;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -moz-box;
+            -moz-line-clamp: 2;
+            -moz-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .video-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .channel-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--gradient-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .channel-info {
+            flex: 1;
+        }
+        .channel-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+        .upload-time {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            opacity: 0.7;
         }
         .video-stats {
             display: flex;
             justify-content: space-between;
-            padding: 0 25px 25px;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
+            align-items: center;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .video-stats span {
+        .stat-item {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .stat-item.views {
+            color: var(--accent-color);
+        }
+        .stat-item.likes {
+            color: var(--primary-color);
         }
 
         /* Categories Section */
@@ -533,103 +801,439 @@
     </section>
 
     <section class="video-grid" id="videos">
-        <h2 style="grid-column: 1/-1; text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: var(--text-primary);">🎬 Featured Videos</h2>
-        <!-- 12 Video Cards with stats -->
+        <h2 style="grid-column: 1/-1; text-align: center; font-size: 3rem; margin-bottom: 60px; color: var(--text-primary); font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🎬 Featured Videos</h2>
+        
+        <!-- Video 1 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 1" loading="lazy">
-            <h3>Amazing Funny Moments</h3>
+            <div class="video-player">
+                <video controls poster="video1.png">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">12:45</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Amazing Funny Moments That Will Make You Laugh Out Loud</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">VF</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Viral Fun</div>
+                        <div class="upload-time">2 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 2.3M views</span>
-                <span>❤️ 89K</span>
+                <div class="stat-item views">👁️ 2.3M views</div>
+                <div class="stat-item likes">❤️ 89K</div>
             </div>
         </div>
+
+        <!-- Video 2 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 2" loading="lazy">
-            <h3>Epic Fail Compilation</h3>
+            <div class="video-player">
+                <video controls poster="video2.png">
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">15:20</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Epic Fail Compilation 2026 - Ultimate Fails Collection</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">FC</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Fail Central</div>
+                        <div class="upload-time">1 week ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 1.8M views</span>
-                <span>❤️ 67K</span>
+                <div class="stat-item views">👁️ 1.8M views</div>
+                <div class="stat-item likes">❤️ 67K</div>
             </div>
         </div>
+
+        <!-- Video 3 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 3" loading="lazy">
-            <h3>Cute Animals 2026</h3>
+            <div class="video-player">
+                <video controls poster="video3.png">
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">8:30</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Cute Animals 2026 - Most Adorable Pet Moments</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">PA</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Pet Paradise</div>
+                        <div class="upload-time">3 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 3.1M views</span>
-                <span>❤️ 124K</span>
+                <div class="stat-item views">👁️ 3.1M views</div>
+                <div class="stat-item likes">❤️ 124K</div>
             </div>
         </div>
+
+        <!-- Video 4 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 4" loading="lazy">
-            <h3>Street Food Tour</h3>
+            <div class="video-player">
+                <video controls poster="video4.png">
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">18:15</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Street Food Tour Around The World - Amazing Food Discovery</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">FT</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Food Traveler</div>
+                        <div class="upload-time">5 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 1.5M views</span>
-                <span>❤️ 45K</span>
+                <div class="stat-item views">👁️ 1.5M views</div>
+                <div class="stat-item likes">❤️ 45K</div>
             </div>
         </div>
+
+        <!-- Video 5 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 5" loading="lazy">
-            <h3>Life Hacks You Need</h3>
+            <div class="video-player">
+                <video controls poster="video5.png">
+                    <source src="video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">10:50</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Life Hacks You Need To Know - Ultimate Life Tips 2026</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">LH</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Life Hacks Pro</div>
+                        <div class="upload-time">4 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 2.7M views</span>
-                <span>❤️ 98K</span>
+                <div class="stat-item views">👁️ 2.7M views</div>
+                <div class="stat-item likes">❤️ 98K</div>
             </div>
         </div>
+
+        <!-- Video 6 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 6" loading="lazy">
-            <h3>Dance Challenge</h3>
+            <div class="video-player">
+                <video controls poster="video6.png">
+                    <source src="video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">6:25</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Viral Dance Challenge 2026 - Best Dance Compilation</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">DC</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Dance Crew</div>
+                        <div class="upload-time">1 day ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 4.2M views</span>
-                <span>❤️ 156K</span>
+                <div class="stat-item views">👁️ 4.2M views</div>
+                <div class="stat-item likes">❤️ 156K</div>
             </div>
         </div>
+
+        <!-- Video 7 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 7" loading="lazy">
-            <h3>Gaming Highlights</h3>
+            <div class="video-player">
+                <video controls poster="video7.png">
+                    <source src="video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">22:10</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Epic Gaming Highlights - Best Gaming Moments 2026</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">GH</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Game Hub</div>
+                        <div class="upload-time">6 hours ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 1.9M views</span>
-                <span>❤️ 71K</span>
+                <div class="stat-item views">👁️ 1.9M views</div>
+                <div class="stat-item likes">❤️ 71K</div>
             </div>
         </div>
+
+        <!-- Video 8 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 8" loading="lazy">
-            <h3>Travel Vlog</h3>
+            <div class="video-player">
+                <video controls poster="video8.png">
+                    <source src="video8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">25:30</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Amazing Travel Vlog - Hidden Paradise Discovery</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">TV</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Travel Vlogs</div>
+                        <div class="upload-time">2 weeks ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 1.3M views</span>
-                <span>❤️ 38K</span>
+                <div class="stat-item views">👁️ 1.3M views</div>
+                <div class="stat-item likes">❤️ 38K</div>
             </div>
         </div>
+
+        <!-- Video 9 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 9" loading="lazy">
-            <h3>Cooking Recipe</h3>
+            <div class="video-player">
+                <video controls poster="video9.png">
+                    <source src="video9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">14:20</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Delicious Cooking Recipe - Master Chef Secrets 2026</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">CR</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Cooking Master</div>
+                        <div class="upload-time">3 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 2.1M views</span>
-                <span>❤️ 82K</span>
+                <div class="stat-item views">👁️ 2.1M views</div>
+                <div class="stat-item likes">❤️ 82K</div>
             </div>
         </div>
+
+        <!-- Video 10 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 10" loading="lazy">
-            <h3>Motivational Speech</h3>
+            <div class="video-player">
+                <video controls poster="video10.png">
+                    <source src="video10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">16:45</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Powerful Motivational Speech That Will Change Your Life</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">MS</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Motivation Station</div>
+                        <div class="upload-time">1 week ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 1.6M views</span>
-                <span>❤️ 59K</span>
+                <div class="stat-item views">👁️ 1.6M views</div>
+                <div class="stat-item likes">❤️ 59K</div>
             </div>
         </div>
+
+        <!-- Video 11 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 11" loading="lazy">
-            <h3>Sports Highlights</h3>
+            <div class="video-player">
+                <video controls poster="video11.png">
+                    <source src="video11.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">19:55</div>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Incredible Sports Highlights - Best Athletic Moments 2026</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">SH</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Sports Central</div>
+                        <div class="upload-time">4 days ago</div>
+                    </div>
+                </div>
+            </div>
             <div class="video-stats">
-                <span>👁️ 2.8M views</span>
-                <span>❤️ 103K</span>
+                <div class="stat-item views">👁️ 2.8M views</div>
+                <div class="stat-item likes">❤️ 103K</div>
             </div>
         </div>
+
+        <!-- Video 12 -->
         <div class="video-card">
-            <img src="video.png" alt="Trending Video 12" loading="lazy">
-            <h3>Music Video 2026</h3>
-            <div class="video-stats">
-                <span>👁️ 5.1M views</span>
-                <span>❤️ 201K</span>
+            <div class="video-player">
+                <video controls poster="video12.png">
+                    <source src="video12.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-duration">4:30</div>
             </div>
+            <div class="video-info">
+                <h3 class="video-title">Hit Music Video 2026 - Official Video Release</h3>
+                <div class="video-meta">
+                    <div class="channel-avatar">MV</div>
+                    <div class="channel-info">
+                        <div class="channel-name">Music Vibes</div>
+                        <div class="upload-time">12 hours ago</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-stats">
+                <div class="stat-item views">👁️ 5.1M views</div>
+                <div class="stat-item likes">❤️ 201K</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy-policy" class="page-section">
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+        </div>
+        <div class="page-content">
+            <h2>Information We Collect</h2>
+            <p>We collect information you provide directly to us, such as when you create an account, subscribe to our service, or contact us.</p>
+            <ul>
+                <li>Name and email address</li>
+                <li>Payment information (if applicable)</li>
+                <li>Usage data and preferences</li>
+                <li>Device and browser information</li>
+            </ul>
+            
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect to provide, maintain, and improve our services.</p>
+            <ul>
+                <li>To deliver and maintain our video streaming service</li>
+                <li>To personalize your experience</li>
+                <li>To communicate with you about our services</li>
+                <li>To analyze usage patterns and improve our platform</li>
+            </ul>
+            
+            <h2>Data Protection</h2>
+            <p>We implement appropriate security measures to protect your personal information against unauthorized access.</p>
+            
+            <h2>Your Rights</h2>
+            <p>You have the right to access, update, or delete your personal information at any time.</p>
+            
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at privacy@viralvideos.com</p>
+        </div>
+    </section>
+
+    <!-- Terms & Conditions Section -->
+    <section id="terms-conditions" class="page-section">
+        <div class="page-header">
+            <h1>Terms & Conditions</h1>
+        </div>
+        <div class="page-content">
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing and using Viral Videos, you accept and agree to be bound by the terms and provision of this agreement.</p>
+            
+            <h2>Use License</h2>
+            <p>We grant you a limited, non-exclusive, non-transferable, and revocable license to use our service.</p>
+            
+            <h2>User Responsibilities</h2>
+            <p>As a user, you agree to:</p>
+            <ul>
+                <li>Provide accurate information</li>
+                <li>Not share your account credentials</li>
+                <li>Not upload inappropriate content</li>
+                <li>Respect intellectual property rights</li>
+                <li>Comply with all applicable laws</li>
+            </ul>
+            
+            <h2>Content Guidelines</h2>
+            <p>Users must not upload content that is:</p>
+            <ul>
+                <li>Illegal or harmful</li>
+                <li>Violent or explicit</li>
+                <li>Infringing on copyrights</li>
+                <li>Spam or misleading</li>
+            </ul>
+            
+            <h2>Account Termination</h2>
+            <p>We reserve the right to terminate accounts that violate these terms.</p>
+            
+            <h2>Changes to Terms</h2>
+            <p>We may update these terms periodically. Continued use constitutes acceptance of changes.</p>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section id="disclaimer" class="page-section">
+        <div class="page-header">
+            <h1>Disclaimer</h1>
+        </div>
+        <div class="page-content">
+            <h2>Content Accuracy</h2>
+            <p>The information on this website is provided on an "as is" basis. We make no warranties about the accuracy or reliability of content.</p>
+            
+            <h2>Third-Party Content</h2>
+            <p>Our platform may contain links to third-party websites. We are not responsible for the content or practices of external sites.</p>
+            
+            <h2>Service Availability</h2>
+            <p>We do not guarantee uninterrupted service availability and may experience technical difficulties.</p>
+            
+            <h2>User Discretion</h2>
+            <p>Users are responsible for their own judgment when viewing content. Parental guidance is recommended for minors.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>Viral Videos shall not be liable for any damages arising from the use of our service.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="page-content">
+            <h2>Get in Touch</h2>
+            <p>We value your feedback and are here to help with any questions or concerns.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <h2>Other Ways to Reach Us</h2>
+            <p><strong>Email:</strong> support@viralvideos.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Viral Street, Internet City, Web State 12345</p>
         </div>
     </section>
 
@@ -723,10 +1327,10 @@
             </div>
             <div class="footer-section">
                 <h3>Legal</h3>
-                <p><a href="#">Privacy Policy</a></p>
-                <p><a href="#">Terms & Conditions</a></p>
-                <p><a href="#">Disclaimer</a></p>
-                <p><a href="#">DMCA</a></p>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-conditions">Terms & Conditions</a></li>
+                <li><a href="#disclaimer">Disclaimer</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
             <div class="footer-section">
                 <h3>Connect</h3>
@@ -742,6 +1346,7 @@
     </footer>
 
     <script>
+        // Slider functionality
         const slider = document.getElementById('slider');
         let currentSlide = 0;
         const totalSlides = 5;
@@ -753,8 +1358,72 @@
         }
 
         setInterval(nextSlide, interval);
-        // Initial position
         slider.style.transform = 'translateX(0)';
+
+        // Page navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Handle navigation clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            // Privacy Policy link
+            const privacyLinks = document.querySelectorAll('a[href="#privacy-policy"]');
+            privacyLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('privacy-policy');
+                });
+            });
+
+            // Terms & Conditions link
+            const termsLinks = document.querySelectorAll('a[href="#terms-conditions"]');
+            termsLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('terms-conditions');
+                });
+            });
+
+            // Disclaimer link
+            const disclaimerLinks = document.querySelectorAll('a[href="#disclaimer"]');
+            disclaimerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('disclaimer');
+                });
+            });
+
+            // Contact link
+            const contactLinks = document.querySelectorAll('a[href="#contact"]');
+            contactLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('contact');
+                });
+            });
+
+            // Home link
+            const homeLinks = document.querySelectorAll('a[href="#"], a[href="#home"]');
+            homeLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Hide all pages and show main content
+                    const pages = document.querySelectorAll('.page-section');
+                    pages.forEach(page => page.classList.remove('active'));
+                    window.scrollTo(0, 0);
+                });
+            });
+        });
     </script>
 </body>
 </html>
