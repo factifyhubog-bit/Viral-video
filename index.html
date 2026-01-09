@@ -449,12 +449,153 @@
         /* Video Grid */
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            padding: 80px 40px;
+            padding: 80px 20px;
             max-width: 1400px;
             margin: 0 auto;
             background: var(--dark-bg);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                z-index: 1001;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-text {
+                bottom: 40px;
+                left: 20px;
+                max-width: 90%;
+            }
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+            
+            .slide img {
+                width: 100%;
+                height: auto;
+                max-height: 70vh;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 40px 10px;
+            }
+            
+            .video-player img {
+                max-height: 300px;
+            }
+            
+            .categories {
+                padding: 40px 20px;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+            }
+            
+            .features {
+                padding: 40px 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                bottom: 20px;
+                left: 15px;
+                max-width: 95%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .slide img {
+                max-height: 60vh;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 30px 8px;
+            }
+            
+            .video-player img {
+                max-height: 250px;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
         }
         .video-card {
             background: linear-gradient(145deg, var(--card-bg), #2a2a2a);
@@ -827,31 +968,86 @@
             }
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
             }
-            .hero {
-                height: 80vh;
-                margin-top: 60px;
+            .nav-links.active {
+                display: flex;
             }
+            .menu-toggle {
+                display: block;
+            }
+            
             .hero-text {
-                left: 20px;
                 bottom: 40px;
+                left: 20px;
                 max-width: 90%;
             }
             .hero-text h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
             .hero-text p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
-            .scroll-section h2 {
-                font-size: 2.2rem;
+            
+            .slide img {
+                width: 100%;
+                height: auto;
+                max-height: 70vh;
+                object-fit: contain;
+                object-position: center;
+                display: block;
             }
+            
             .video-grid {
-                padding: 60px 20px;
-                gap: 30px;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 40px 10px;
             }
-            .categories h2, .features h2 {
-                font-size: 2.2rem;
+            
+            .video-player img {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                bottom: 20px;
+                left: 15px;
+                max-width: 95%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .slide img {
+                max-height: 60vh;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
             }
         }
     </style>
