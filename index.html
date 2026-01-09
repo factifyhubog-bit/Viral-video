@@ -100,7 +100,22 @@
             border-radius: 4px;
         }
 
-        /* Navigation */
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .menu-toggle:hover {
+            background: rgba(255, 0, 110, 0.2);
+            color: var(--primary-color);
+        }
         nav {
             position: fixed;
             top: 0;
@@ -1057,7 +1072,8 @@
     <nav>
         <div class="nav-container">
             <h1 class="logo">Viral Videos</h1>
-            <ul class="nav-links">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">Categories</a></li>
@@ -2349,6 +2365,12 @@
                 setInterval(nextSlide, interval);
             }
         });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
 
         // Page navigation functionality
         function showPage(pageId) {
