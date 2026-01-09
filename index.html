@@ -267,11 +267,16 @@
             height: 220px;
             background: #000;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .video-player video {
+        .video-player img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
+            display: block;
         }
         .video-controls {
             position: absolute;
@@ -475,12 +480,17 @@
             height: 220px;
             overflow: hidden;
             background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .video-thumbnail img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
             transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: block;
         }
         .video-card:hover .video-thumbnail img {
             transform: scale(1.15) rotate(2deg);
@@ -1346,7 +1356,7 @@
         <!-- Video 26 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo26.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo26.png" alt="Photo 26" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">12:45</div>
             </div>
                             Gardening Tips - Beautiful Garden 2026</h3>
@@ -1367,7 +1377,7 @@
         <!-- Video 27 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo27.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo27.png" alt="Photo 27" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">7:15</div>
             </div>
                             Soccer Highlights - Amazing Goals 2026</h3>
@@ -1388,7 +1398,7 @@
         <!-- Video 28 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo28.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo28.png" alt="Photo 28" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">11:30</div>
             </div>
                             Podcast Highlights - Best Episodes 2026</h3>
@@ -1409,7 +1419,7 @@
         <!-- Video 29 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo29.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo29.png" alt="Photo 29" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">8:20</div>
             </div>
                             Virtual Reality Experience - New Worlds 2026</h3>
@@ -1430,7 +1440,7 @@
         <!-- Video 30 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo30.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo30.png" alt="Photo 30" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">15:00</div>
             </div>
                             Year in Review - Best Moments of 2026</h3>
@@ -1451,7 +1461,7 @@
         <!-- Video 31 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo31.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo31.png" alt="Photo 31" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">10:45</div>
             </div>
                             Travel Vlog - Exploring New Cities 2026</h3>
@@ -1472,7 +1482,7 @@
         <!-- Video 32 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo32.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo32.png" alt="Photo 32" style="width:100%; height:100%; object-fit:cover;">
                 <div class="video-duration">9:50</div>
             </div>
                             Food Review - Best Restaurants 2026</h3>
@@ -1493,7 +1503,7 @@
         <!-- Video 33 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo33.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo33.png" alt="Photo 33" style="width:100%; height:100%; object-fit:cover;">
                     33.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1517,7 +1527,7 @@
         <!-- Video 34 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo34.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo34.png" alt="Photo 34" style="width:100%; height:100%; object-fit:cover;">
                     34.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1541,7 +1551,7 @@
         <!-- Video 35 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo35.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo35.png" alt="Photo 35" style="width:100%; height:100%; object-fit:cover;">
                     35.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1565,7 +1575,7 @@
         <!-- Video 36 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo36.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo36.png" alt="Photo 36" style="width:100%; height:100%; object-fit:cover;">
                     36.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1589,7 +1599,7 @@
         <!-- Video 37 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo37.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo37.png" alt="Photo 37" style="width:100%; height:100%; object-fit:cover;">
                     37.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1613,7 +1623,7 @@
         <!-- Video 38 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo38.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo38.png" alt="Photo 38" style="width:100%; height:100%; object-fit:cover;">
                     38.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1637,7 +1647,7 @@
         <!-- Video 39 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo39.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo39.png" alt="Photo 39" style="width:100%; height:100%; object-fit:cover;">
                     39.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1661,7 +1671,7 @@
         <!-- Video 40 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo40.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo40.png" alt="Photo 40" style="width:100%; height:100%; object-fit:cover;">
                     40.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1685,7 +1695,7 @@
         <!-- Video 41 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo41.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo41.png" alt="Photo 41" style="width:100%; height:100%; object-fit:cover;">
                     41.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1709,7 +1719,7 @@
         <!-- Video 42 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo42.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo42.png" alt="Photo 42" style="width:100%; height:100%; object-fit:cover;">
                     42.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1733,7 +1743,7 @@
         <!-- Video 43 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo43.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo43.png" alt="Photo 43" style="width:100%; height:100%; object-fit:cover;">
                     43.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1757,7 +1767,7 @@
         <!-- Video 44 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo44.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo44.png" alt="Photo 44" style="width:100%; height:100%; object-fit:cover;">
                     44.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1781,7 +1791,7 @@
         <!-- Video 45 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo45.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo45.png" alt="Photo 45" style="width:100%; height:100%; object-fit:cover;">
                     45.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1805,7 +1815,7 @@
         <!-- Video 46 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo46.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo46.png" alt="Photo 46" style="width:100%; height:100%; object-fit:cover;">
                     46.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1829,7 +1839,7 @@
         <!-- Video 47 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo47.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo47.png" alt="Photo 47" style="width:100%; height:100%; object-fit:cover;">
                     47.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1853,7 +1863,7 @@
         <!-- Video 48 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo48.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo48.png" alt="Photo 48" style="width:100%; height:100%; object-fit:cover;">
                     48.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1877,7 +1887,7 @@
         <!-- Video 49 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo49.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo49.png" alt="Photo 49" style="width:100%; height:100%; object-fit:cover;">
                     49.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -1901,7 +1911,7 @@
         <!-- Video 50 -->
         <div class="video-card">
             <div class="video-player">
-                <img src="photo50.png" alt="Photo" style="width:100%; height:100%; object-fit:cover;">
+                <img src="photo50.png" alt="Photo 50" style="width:100%; height:100%; object-fit:cover;">
                     50.png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
