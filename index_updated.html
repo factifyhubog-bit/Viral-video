@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Watch the most trending viral videos and photos. Discover amazing content updated daily with the best entertainment, comedy, and lifestyle content." name="description"/>
+<meta content="viral videos, trending videos, entertainment, comedy, lifestyle, photos, viral content, best videos 2026" name="keywords"/>
+<meta content="Viral Videos Platform" name="author"/>
+<meta content="Viral Videos - Trending Entertainment Platform" property="og:title"/>
+<meta content="Discover the hottest viral videos and trending content updated daily" property="og:description"/>
+<meta content="1 days" name="revisit-after"/>
+<meta content="global" name="distribution"/>
+<meta content="general" name="rating"/>
+<meta content="US" name="geo.region"/>
+<meta content="United States" name="geo.placename"/>
+<!-- Open Graph Meta Tags -->
+<meta content="Viral Videos - Watch Trending Videos Online" property="og:title"/>
+<meta content="Watch the most trending viral videos online. Funny clips, gaming highlights, music videos, and entertainment content updated daily." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://viralvideos.com" property="og:url"/>
+<meta content="https://viralvideos.com/og-image.jpg" property="og:image"/>
+<meta content="Viral Videos" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Viral Videos - Watch Trending Videos Online" name="twitter:title"/>
+<meta content="Watch the most trending viral videos online. Funny clips, gaming highlights, music videos, and entertainment content updated daily." name="twitter:description"/>
+<meta content="https://viralvideos.com/twitter-image.jpg" name="twitter:image"/>
+<meta content="@viralvideos" name="twitter:site"/>
+<!-- Canonical URL -->
+<link href="https://viralvideos.com" rel="canonical"/>
+<!-- Additional SEO Tags -->
+<meta content="#ff006e" name="theme-color"/>
+<meta content="#ff006e" name="msapplication-TileColor"/>
+<meta content="Viral Videos" name="application-name"/>
+<link href="https://viralvideos.com" hreflang="en" rel="alternate"/>
+<link href="https://viralvideos.com" hreflang="x-default" rel="alternate"/>
+<title>Viral Videos - Hottest Trending Entertainment Platform | Watch Viral Content</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Viral Videos",
+        "url": "https://viralvideos.com",
+        "description": "Watch the most trending viral videos online. Funny clips, gaming highlights, music videos, and entertainment content updated daily.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://viralvideos.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Viral Videos",
+            "url": "https://viralvideos.com"
+        }
+    }
+    </script>
+<style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #ff006e;
+            --secondary-color: #8338ec;
+            --accent-color: #06ffa5;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --gradient-1: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
+            --gradient-2: linear-gradient(135deg, #8338ec 0%, #06ffa5 100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .menu-toggle:hover {
+            background: rgba(255, 0, 110, 0.2);
+            color: var(--primary-color);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 0, 110, 0.3);
+        }
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Slider - Mobile Responsive */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider {
+            display: flex;
+            width: 500%; /* 5 slides */
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+        .slide {
+            flex: 0 0 100%;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 80px;
+            left: 80px;
+            color: white;
+            z-index: 2;
+            max-width: 600px;
+        }
+        .hero-text h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--gradient-1);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 0, 110, 0.4);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                z-index: 1001;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-text {
+                bottom: 40px;
+                left: 20px;
+                max-width: 90%;
+            }
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+            
+            .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 40px 10px;
+            }
+            
+            .video-player img {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                bottom: 20px;
+                left: 15px;
+                max-width: 95%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 30px 8px;
+            }
+            
+            .video-player img {
+                max-height: 250px;
+            }
+        }
+
+        /* Scroll Section */
+        .scroll-section {
+            text-align: center;
+            padding: 100px 20px;
+            background: var(--gradient-1);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .scroll-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        .scroll-section h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .scroll-section p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        /* Video Player Styles */
+        .video-player {
+            position: relative;
+            width: 100%;
+            min-height: 220px;
+            background: #000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-player img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+        }
+        .video-controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .video-player:hover .video-controls {
+            opacity: 1;
+        }
+        .play-pause-btn {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        .progress-filled {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .volume-slider {
+            width: 60px;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        /* Page Sections */
+        .page-section {
+            display: none;
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--dark-bg);
+            min-height: 100vh;
+        }
+        .page-section.active {
+            display: block;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        .page-content {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            line-height: 1.8;
+        }
+        .page-content h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 30px 0 15px 0;
+        }
+        .page-content h3 {
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            margin: 25px 0 10px 0;
+        }
+        .page-content p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .page-content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .page-content li {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 20px;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group textarea {
+            background: var(--dark-bg);
+            border: 1px solid rgba(255, 0, 110, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            justify-self: center;
+        }
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.3);
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 80px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--dark-bg);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                z-index: 1001;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-text {
+                bottom: 40px;
+                left: 20px;
+                max-width: 90%;
+            }
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+            
+            .slide img {
+                width: 100%;
+                height: auto;
+                max-height: 70vh;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 40px 10px;
+            }
+            
+            .video-player img {
+                max-height: 300px;
+            }
+            
+            .categories {
+                padding: 40px 20px;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+            }
+            
+            .features {
+                padding: 40px 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                bottom: 20px;
+                left: 15px;
+                max-width: 95%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .slide img {
+                max-height: 60vh;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 30px 8px;
+            }
+            
+            .video-player img {
+                max-height: 250px;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+        .video-card {
+            background: linear-gradient(145deg, var(--card-bg), #2a2a2a);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            transform-style: preserve-3d;
+        }
+        .video-card:hover {
+            transform: translateY(-20px) rotateX(5deg) scale(1.03);
+            box-shadow: 0 35px 80px rgba(255, 0, 110, 0.3);
+            border-color: var(--primary-color);
+        }
+        .video-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .video-card:hover::before {
+            transform: scaleX(1);
+        }
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: block;
+        }
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.15) rotate(2deg);
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 0, 110, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.5);
+        }
+        .play-button::before {
+            content: '▶';
+            color: white;
+            font-size: 20px;
+            margin-left: 3px;
+        }
+        .video-card:hover .play-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .video-duration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .video-info {
+            padding: 25px;
+        }
+        .video-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -moz-box;
+            -moz-line-clamp: 2;
+            -moz-box-orient: vertical;
+            display: box;
+            line-clamp: 2;
+            box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .video-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .channel-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--gradient-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .channel-info {
+            flex: 1;
+        }
+        .channel-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+        .upload-time {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+        .video-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.02);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .stat-item.views {
+            color: var(--accent-color);
+        }
+        .stat-item.likes {
+            color: var(--primary-color);
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 40px;
+            background: linear-gradient(180deg, var(--dark-bg) 0%, #1a0a1a 100%);
+        }
+        .categories h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .category-card {
+            background: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 0, 110, 0.2);
+        }
+        .category-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .category-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 40px;
+            background: var(--card-bg);
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: var(--text-primary);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+            border: 1px solid rgba(255, 0, 110, 0.2);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(255, 0, 110, 0.15);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #050505;
+            color: var(--text-secondary);
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 0, 110, 0.2);
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-section h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        footer a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        footer a:hover {
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 30px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Advertisement Styles */
+        .ad-banner {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .ad-container {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .ad-label {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-size: 10px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .ad-space-728x90 {
+            width: 728px;
+            height: 90px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .side-ad-left, .side-ad-right {
+            position: fixed;
+            top: 100px;
+            width: 160px;
+            height: 600px;
+            z-index: 100;
+        }
+        .side-ad-left {
+            left: 20px;
+        }
+        .side-ad-right {
+            right: 20px;
+        }
+        .ad-space-160x600 {
+            width: 160px;
+            height: 600px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 12px;
+        }
+        @media (max-width: 1200px) {
+            .side-ad-left, .side-ad-right {
+                display: none;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 20px;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-text {
+                bottom: 40px;
+                left: 20px;
+                max-width: 90%;
+            }
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+            
+            .slide img {
+                width: 100%;
+                height: auto;
+                max-height: 70vh;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 40px 10px;
+            }
+            
+            .video-player img {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                bottom: 20px;
+                left: 15px;
+                max-width: 95%;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .slide img {
+                max-height: 60vh;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+                display: block;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+<div class="nav-container">
+<h1 class="logo">Viral Videos</h1>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">Videos</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Features</a></li>
+</ul>
+</div>
+</nav>
+<header class="hero">
+<div class="slider" id="slider">
+<div class="slide">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Trending Slide 1" src="slidepic1.png"/></a>
+<div class="overlay"></div>
+</div>
+<div class="slide">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Trending Slide 2" src="slidepic2.png"/></a>
+<div class="overlay"></div>
+</div>
+<div class="slide">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Trending Slide 3" src="slidepic3.png"/></a>
+<div class="overlay"></div>
+</div>
+<div class="slide">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Trending Slide 4" src="slidepic4.png"/></a>
+<div class="overlay"></div>
+</div>
+<div class="slide">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Trending Slide 5" src="slidepic5.png"/></a>
+<div class="overlay"></div>
+</div>
+</div>
+<div class="hero-text">
+<h1>Viral Videos</h1>
+<p>Watch the most trending content right now</p>
+<a class="cta-button" href="#videos">Explore Videos</a>
+</div>
+<!-- Top Banner Advertisement -->
+<div class="ad-banner">
+<div class="ad-container">
+<span class="ad-label">Advertisement</span>
+<div class="ad-space-728x90">
+<!-- 728x90 Banner Ad Space -->
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Advertisement" src="ad-banner-728x90.jpg" style="width:100%; height:90px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666;"/></a>
+<span style="position:absolute;">728x90 Ad Space</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Side Advertisement -->
+<div class="side-ad-left">
+<div class="ad-container">
+<span class="ad-label">Ad</span>
+<div class="ad-space-160x600">
+<!-- 160x600 Skyscraper Ad Space -->
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Advertisement" src="ad-skyscraper-160x600.jpg" style="width:100%; height:600px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666;"/></a>
+<span style="position:absolute;">160x600 Ad</span>
+</div>
+</div>
+</div>
+<div class="side-ad-right">
+<div class="ad-container">
+<span class="ad-label">Ad</span>
+<div class="ad-space-160x600">
+<!-- 160x600 Skyscraper Ad Space -->
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Advertisement" src="ad-skyscraper-160x600-2.jpg" style="width:100%; height:600px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666;"/></a>
+<span style="position:absolute;">160x600 Ad</span>
+</div>
+</div>
+</div>
+<section class="scroll-section">
+<h2>🔥 Trending Now</h2>
+<p>Discover the hottest viral videos that everyone is talking about. From comedy to entertainment, we've got it all.</p>
+<a class="cta-button" href="#videos">Watch Now</a>
+<!-- Mid-Page Advertisement -->
+<div class="ad-banner" style="margin-top: 40px;">
+<div class="ad-container">
+<span class="ad-label">Advertisement</span>
+<div class="ad-space-728x90">
+<!-- 728x90 Banner Ad Space -->
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Advertisement" src="ad-banner-728x90-2.jpg" style="width:100%; height:90px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666;"/></a>
+<span style="position:absolute;">728x90 Ad Space</span>
+</div>
+</div>
+</div>
+</section>
+<section class="video-grid" id="videos">
+<h2 style="grid-column: 1/-1; text-align: center; font-size: 3rem; margin-bottom: 60px; color: var(--text-primary); font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">🎬 Featured Videos</h2>
+<!-- Video 1 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 1" src="photo1.png"/></a>
+<div class="video-duration">12:45</div>
+</div>
+</div>
+<!-- Video 2 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 2" src="photo2.png"/></a>
+<div class="video-duration">15:20</div>
+</div>
+</div>
+<!-- Video 3 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 3" src="photo3.png"/></a>
+<div class="video-duration">8:30</div>
+</div>
+</div>
+<!-- Video 4 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 4" src="photo4.png"/></a>
+<div class="video-duration">18:15</div>
+</div>
+</div>
+<!-- Video 5 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 5" src="photo5.png"/></a>
+<div class="video-duration">10:50</div>
+</div>
+</div>
+<!-- Video 6 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 6" src="photo6.png"/></a>
+<div class="video-duration">6:25</div>
+</div>
+</div>
+<!-- Video 7 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 7" src="photo7.png"/></a>
+<div class="video-duration">22:10</div>
+</div>
+</div>
+<!-- Video 8 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 8" src="photo8.png"/></a>
+<div class="video-duration">25:30</div>
+</div>
+</div>
+<!-- Video 9 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 9" src="photo9.png"/></a>
+<div class="video-duration">14:20</div>
+</div>
+</div>
+<!-- Video 10 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 10" src="photo10.png"/></a>
+<div class="video-duration">16:45</div>
+</div>
+                            Powerful Motivational Speech That Will Change Your Life
+<div class="video-meta">
+<div class="channel-avatar">MS</div>
+<div class="channel-info">
+<div class="channel-name">Motivation Station</div>
+<div class="upload-time">1 week ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.6M views</div>
+<div class="stat-item likes">❤️ 59K</div>
+</div>
+
+<!-- Video 11 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 11" src="photo11.png"/></a>
+<div class="video-duration">19:55</div>
+</div>
+                            Incredible Sports Highlights - Best Athletic Moments 2026
+<div class="video-meta">
+<div class="channel-avatar">SH</div>
+<div class="channel-info">
+<div class="channel-name">Sports Central</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.8M views</div>
+<div class="stat-item likes">❤️ 103K</div>
+</div>
+
+<!-- Video 12 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 12" src="photo12.png"/></a>
+<div class="video-duration">4:30</div>
+</div>
+                            Hit Music Video 2026 - Official Video Release
+<div class="video-meta">
+<div class="channel-avatar">MV</div>
+<div class="channel-info">
+<div class="channel-name">Music Vibes</div>
+<div class="upload-time">12 hours ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 5.1M views</div>
+<div class="stat-item likes">❤️ 201K</div>
+</div>
+
+<!-- Video 13 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 13" src="photo13.png"/></a>
+<div class="video-duration">11:15</div>
+</div>
+                            Extreme Sports Compilation - Insane Moments 2026
+<div class="video-meta">
+<div class="channel-avatar">ES</div>
+<div class="channel-info">
+<div class="channel-name">Extreme Sports</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.7M views</div>
+<div class="stat-item likes">❤️ 62K</div>
+</div>
+
+<!-- Video 14 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 14" src="photo14.png"/></a>
+<div class="video-duration">8:42</div>
+</div>
+                            Cooking Master Class - Professional Chef Secrets
+<div class="video-meta">
+<div class="channel-avatar">CM</div>
+<div class="channel-info">
+<div class="channel-name">Cooking Masters</div>
+<div class="upload-time">1 week ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 892K views</div>
+<div class="stat-item likes">❤️ 45K</div>
+</div>
+
+<!-- Video 15 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 15" src="photo15.png"/></a>
+<div class="video-duration">15:30</div>
+</div>
+                            Tech Review - Latest Gadgets 2026
+<div class="video-meta">
+<div class="channel-avatar">TR</div>
+<div class="channel-info">
+<div class="channel-name">Tech Reviews</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.1M views</div>
+<div class="stat-item likes">❤️ 98K</div>
+</div>
+
+<!-- Video 16 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 16" src="photo16.png"/></a>
+<div class="video-duration">6:20</div>
+</div>
+                            Dance Battle - Street Dance Championship 2026
+<div class="video-meta">
+<div class="channel-avatar">DB</div>
+<div class="channel-info">
+<div class="channel-name">Dance Battles</div>
+<div class="upload-time">5 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 3.2M views</div>
+<div class="stat-item likes">❤️ 156K</div>
+</div>
+
+<!-- Video 17 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 17" src="photo17.png"/></a>
+<div class="video-duration">9:45</div>
+</div>
+                            Travel Vlog - Hidden Paradise Destination
+<div class="video-meta">
+<div class="channel-avatar">TV</div>
+<div class="channel-info">
+<div class="channel-name">Travel Vlogs</div>
+<div class="upload-time">1 week ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.5M views</div>
+<div class="stat-item likes">❤️ 73K</div>
+</div>
+
+<!-- Video 18 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 18" src="photo18.png"/></a>
+<div class="video-duration">12:10</div>
+</div>
+                            Fitness Motivation - Transform Your Body 2026
+<div class="video-meta">
+<div class="channel-avatar">FM</div>
+<div class="channel-info">
+<div class="channel-name">Fitness Motivation</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 987K views</div>
+<div class="stat-item likes">❤️ 52K</div>
+</div>
+
+<!-- Video 19 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 19" src="photo19.png"/></a>
+<div class="video-duration">7:35</div>
+</div>
+                            Pet Compilation - Cute Animals Doing Funny Things
+<div class="video-meta">
+<div class="channel-avatar">PC</div>
+<div class="channel-info">
+<div class="channel-name">Pet Compilations</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 4.5M views</div>
+<div class="stat-item likes">❤️ 234K</div>
+</div>
+
+<!-- Video 20 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 20" src="photo20.png"/></a>
+<div class="video-duration">10:25</div>
+</div>
+                            Art Tutorial - Digital Painting Masterclass
+<div class="video-meta">
+<div class="channel-avatar">AT</div>
+<div class="channel-info">
+<div class="channel-name">Art Tutorials</div>
+<div class="upload-time">6 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 654K views</div>
+<div class="stat-item likes">❤️ 38K</div>
+</div>
+
+<!-- Video 21 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 21" src="photo21.png"/></a>
+<div class="video-duration">14:50</div>
+</div>
+                            Science Experiment - Amazing Chemical Reactions
+<div class="video-meta">
+<div class="channel-avatar">SE</div>
+<div class="channel-info">
+<div class="channel-name">Science Experiments</div>
+<div class="upload-time">1 week ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.8M views</div>
+<div class="stat-item likes">❤️ 89K</div>
+</div>
+
+<!-- Video 22 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 22" src="photo22.png"/></a>
+<div class="video-duration">5:15</div>
+</div>
+                            Magic Tricks - Mind-Blowing Illusions Revealed
+<div class="video-meta">
+<div class="channel-avatar">MT</div>
+<div class="channel-info">
+<div class="channel-name">Magic Tricks</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.7M views</div>
+<div class="stat-item likes">❤️ 145K</div>
+</div>
+
+<!-- Video 23 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 23" src="photo23.png"/></a>
+<div class="video-duration">8:30</div>
+</div>
+                            Car Review - Luxury Supercars 2026
+<div class="video-meta">
+<div class="channel-avatar">CR</div>
+<div class="channel-info">
+<div class="channel-name">Car Reviews</div>
+<div class="upload-time">5 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 3.8M views</div>
+<div class="stat-item likes">❤️ 198K</div>
+</div>
+
+<!-- Video 24 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 24" src="photo24.png"/></a>
+<div class="video-duration">11:45</div>
+</div>
+                            Fashion Show - Latest Trends 2026
+<div class="video-meta">
+<div class="channel-avatar">FS</div>
+<div class="channel-info">
+<div class="channel-name">Fashion Shows</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.3M views</div>
+<div class="stat-item likes">❤️ 67K</div>
+</div>
+
+<!-- Video 25 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 25" src="photo25.png"/></a>
+<div class="video-duration">9:20</div>
+</div>
+                            Movie Trailer - Blockbuster Preview 2026
+<div class="video-meta">
+<div class="channel-avatar">MT</div>
+<div class="channel-info">
+<div class="channel-name">Robotics Showcase</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 3.1M views</div>
+<div class="stat-item likes">❤️ 178K</div>
+</div>
+
+<!-- Video 26 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 26" src="photo26.png"/></a>
+<div class="video-duration">12:45</div>
+</div>
+                            Gardening Tips - Beautiful Garden 2026
+<div class="video-meta">
+<div class="channel-avatar">GT</div>
+<div class="channel-info">
+<div class="channel-name">Gardening Tips</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 845K views</div>
+<div class="stat-item likes">❤️ 46K</div>
+</div>
+
+<!-- Video 27 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 27" src="photo27.png"/></a>
+<div class="video-duration">7:15</div>
+</div>
+                            Soccer Highlights - Amazing Goals 2026
+<div class="video-meta">
+<div class="channel-avatar">SH</div>
+<div class="channel-info">
+<div class="channel-name">Soccer Highlights</div>
+<div class="upload-time">1 day ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 4.7M views</div>
+<div class="stat-item likes">❤️ 267K</div>
+</div>
+
+<!-- Video 28 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 28" src="photo28.png"/></a>
+<div class="video-duration">11:30</div>
+</div>
+                            Podcast Highlights - Best Episodes 2026
+<div class="video-meta">
+<div class="channel-avatar">PH</div>
+<div class="channel-info">
+<div class="channel-name">Podcast Highlights</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.8M views</div>
+<div class="stat-item likes">❤️ 92K</div>
+</div>
+
+<!-- Video 29 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 29" src="photo29.png"/></a>
+<div class="video-duration">8:20</div>
+</div>
+                            Virtual Reality Experience - New Worlds 2026
+<div class="video-meta">
+<div class="channel-avatar">VR</div>
+<div class="channel-info">
+<div class="channel-name">VR Experiences</div>
+<div class="upload-time">5 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.6M views</div>
+<div class="stat-item likes">❤️ 143K</div>
+</div>
+
+<!-- Video 30 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 30" src="photo30.png"/></a>
+<div class="video-duration">15:00</div>
+</div>
+                            Year in Review - Best Moments of 2026
+<div class="video-meta">
+<div class="channel-avatar">YR</div>
+<div class="channel-info">
+<div class="channel-name">Year Review</div>
+<div class="upload-time">12 hours ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 6.2M views</div>
+<div class="stat-item likes">❤️ 389K</div>
+</div>
+
+<!-- Video 31 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 31" src="photo31.png"/></a>
+<div class="video-duration">10:45</div>
+</div>
+                            Travel Vlog - Exploring New Cities 2026
+<div class="video-meta">
+<div class="channel-avatar">TV</div>
+<div class="channel-info">
+<div class="channel-name">Travel Vlogs</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.4M views</div>
+<div class="stat-item likes">❤️ 73K</div>
+</div>
+
+<!-- Video 32 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 32" src="photo32.png"/></a>
+<div class="video-duration">9:50</div>
+</div>
+                            Food Review - Best Restaurants 2026
+<div class="video-meta">
+<div class="channel-avatar">FR</div>
+<div class="channel-info">
+<div class="channel-name">Food Reviews</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.1M views</div>
+<div class="stat-item likes">❤️ 118K</div>
+</div>
+
+<!-- Video 33 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 33" src="photo33.png"/></a>
+<div class="video-duration">12:10</div>
+</div>
+                            DIY Tutorial - Home Decor 2026
+<div class="video-meta">
+<div class="channel-avatar">DT</div>
+<div class="channel-info">
+<div class="channel-name">DIY Tutorials</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.2M views</div>
+<div class="stat-item likes">❤️ 65K</div>
+</div>
+
+<!-- Video 34 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 34" src="photo34.png"/></a>
+<div class="video-duration">8:40</div>
+</div>
+                            Gaming Highlights - Best Moments 2026
+<div class="video-meta">
+<div class="channel-avatar">GH</div>
+<div class="channel-info">
+<div class="channel-name">Gaming Highlights</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 3.5M views</div>
+<div class="stat-item likes">❤️ 192K</div>
+</div>
+
+<!-- Video 35 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 35" src="photo35.png"/></a>
+<div class="video-duration">11:20</div>
+</div>
+                            Technology News - Latest Updates 2026
+<div class="video-meta">
+<div class="channel-avatar">TN</div>
+<div class="channel-info">
+<div class="channel-name">Tech News</div>
+<div class="upload-time">1 day ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.3M views</div>
+<div class="stat-item likes">❤️ 129K</div>
+</div>
+
+<!-- Video 36 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 36" src="photo36.png"/></a>
+<div class="video-duration">12:45</div>
+</div>
+                            Gardening Tips - Beautiful Garden 2026
+<div class="video-meta">
+<div class="channel-avatar">GT</div>
+<div class="channel-info">
+<div class="channel-name">Gardening Tips</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 845K views</div>
+<div class="stat-item likes">❤️ 46K</div>
+</div>
+
+<!-- Video 37 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 37" src="photo37.png"/></a>
+<div class="video-duration">7:15</div>
+</div>
+                            Soccer Highlights - Amazing Goals 2026
+<div class="video-meta">
+<div class="channel-avatar">SH</div>
+<div class="channel-info">
+<div class="channel-name">Soccer Highlights</div>
+<div class="upload-time">1 day ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 4.7M views</div>
+<div class="stat-item likes">❤️ 267K</div>
+</div>
+
+<!-- Video 38 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 38" src="photo38.png"/></a>
+<div class="video-duration">11:30</div>
+</div>
+                            Podcast Highlights - Best Episodes 2026
+<div class="video-meta">
+<div class="channel-avatar">PH</div>
+<div class="channel-info">
+<div class="channel-name">Podcast Highlights</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.8M views</div>
+<div class="stat-item likes">❤️ 92K</div>
+</div>
+
+<!-- Video 39 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 39" src="photo39.png"/></a>
+<div class="video-duration">8:20</div>
+</div>
+                            Virtual Reality Experience - New Worlds 2026
+<div class="video-meta">
+<div class="channel-avatar">VR</div>
+<div class="channel-info">
+<div class="channel-name">VR Experiences</div>
+<div class="upload-time">5 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.6M views</div>
+<div class="stat-item likes">❤️ 143K</div>
+</div>
+
+<!-- Video 40 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 40" src="photo40.png"/></a>
+<div class="video-duration">15:00</div>
+</div>
+                            Year in Review - Best Moments of 2026
+<div class="video-meta">
+<div class="channel-avatar">YR</div>
+<div class="channel-info">
+<div class="channel-name">Year Review</div>
+<div class="upload-time">12 hours ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 6.2M views</div>
+<div class="stat-item likes">❤️ 389K</div>
+</div>
+
+<!-- Video 41 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 41" src="photo41.png"/></a>
+<div class="video-duration">10:45</div>
+</div>
+                            Travel Vlog - Exploring New Cities 2026
+<div class="video-meta">
+<div class="channel-avatar">TV</div>
+<div class="channel-info">
+<div class="channel-name">Travel Vlogs</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.4M views</div>
+<div class="stat-item likes">❤️ 73K</div>
+</div>
+
+<!-- Video 42 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 42" src="photo42.png"/></a>
+<div class="video-duration">9:50</div>
+</div>
+                            Food Review - Best Restaurants 2026
+<div class="video-meta">
+<div class="channel-avatar">FR</div>
+<div class="channel-info">
+<div class="channel-name">Food Reviews</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.1M views</div>
+<div class="stat-item likes">❤️ 118K</div>
+</div>
+
+<!-- Video 43 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 43" src="photo43.png"/></a>
+<div class="video-duration">12:10</div>
+</div>
+                            DIY Tutorial - Home Decor 2026
+<div class="video-meta">
+<div class="channel-avatar">DT</div>
+<div class="channel-info">
+<div class="channel-name">DIY Tutorials</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.2M views</div>
+<div class="stat-item likes">❤️ 65K</div>
+</div>
+
+<!-- Video 44 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 44" src="photo44.png"/></a>
+<div class="video-duration">8:40</div>
+</div>
+                            Gaming Highlights - Best Moments 2026
+<div class="video-meta">
+<div class="channel-avatar">GH</div>
+<div class="channel-info">
+<div class="channel-name">Gaming Highlights</div>
+<div class="upload-time">2 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 3.5M views</div>
+<div class="stat-item likes">❤️ 192K</div>
+</div>
+
+<!-- Video 45 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 45" src="photo45.png"/></a>
+<div class="video-duration">11:20</div>
+</div>
+                            Technology News - Latest Updates 2026
+<div class="video-meta">
+<div class="channel-avatar">TN</div>
+<div class="channel-info">
+<div class="channel-name">Tech News</div>
+<div class="upload-time">1 day ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.3M views</div>
+<div class="stat-item likes">❤️ 129K</div>
+</div>
+
+<!-- Video 46 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 46" src="photo46.png"/></a>
+<div class="video-duration">12:45</div>
+</div>
+                            Gardening Tips - Beautiful Garden 2026
+<div class="video-meta">
+<div class="channel-avatar">GT</div>
+<div class="channel-info">
+<div class="channel-name">Gardening Tips</div>
+<div class="upload-time">4 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 845K views</div>
+<div class="stat-item likes">❤️ 46K</div>
+</div>
+
+<!-- Video 47 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 47" src="photo47.png"/></a>
+<div class="video-duration">7:15</div>
+</div>
+                            Soccer Highlights - Amazing Goals 2026
+<div class="video-meta">
+<div class="channel-avatar">SH</div>
+<div class="channel-info">
+<div class="channel-name">Soccer Highlights</div>
+<div class="upload-time">1 day ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 4.7M views</div>
+<div class="stat-item likes">❤️ 267K</div>
+</div>
+
+<!-- Video 48 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 48" src="photo48.png"/></a>
+<div class="video-duration">11:30</div>
+</div>
+                            Podcast Highlights - Best Episodes 2026
+<div class="video-meta">
+<div class="channel-avatar">PH</div>
+<div class="channel-info">
+<div class="channel-name">Podcast Highlights</div>
+<div class="upload-time">3 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 1.8M views</div>
+<div class="stat-item likes">❤️ 92K</div>
+</div>
+
+<!-- Video 49 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 49" src="photo49.png"/></a>
+<div class="video-duration">8:20</div>
+</div>
+                            Virtual Reality Experience - New Worlds 2026
+<div class="video-meta">
+<div class="channel-avatar">VR</div>
+<div class="channel-info">
+<div class="channel-name">VR Experiences</div>
+<div class="upload-time">5 days ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 2.6M views</div>
+<div class="stat-item likes">❤️ 143K</div>
+</div>
+
+<!-- Video 50 -->
+<div class="video-card">
+<div class="video-player">
+<a href="https://www.effectivegatecpm.com/kwf67t5z6?key=35b21ad965852f163d1e5f0e64e55150" target="_blank"><img alt="Photo 50" src="photo50.png"/></a>
+<div class="video-duration">15:00</div>
+</div>
+                            Year in Review - Best Moments of 2026
+<div class="video-meta">
+<div class="channel-avatar">YR</div>
+<div class="channel-info">
+<div class="channel-name">Year Review</div>
+<div class="upload-time">12 hours ago</div>
+</div>
+</div>
+</div>
+<div class="video-stats">
+<div class="stat-item views">👁️ 6.2M views</div>
+<div class="stat-item likes">❤️ 389K</div>
+</div>
+
+</section>
+<!-- Privacy Policy Section -->
+<section class="page-section" id="privacy-policy">
+<div class="page-header">
+<h1>Privacy Policy</h1>
+</div>
+<div class="page-content">
+<h2>Information We Collect</h2>
+<p>We collect information you provide directly to us, such as when you create an account, subscribe to our service, or contact us.</p>
+<ul>
+<li>Name and email address</li>
+<li>Payment information (if applicable)</li>
+<li>Usage data and preferences</li>
+<li>Device and browser information</li>
+</ul>
+<h2>How We Use Your Information</h2>
+<p>We use the information we collect to provide, maintain, and improve our services.</p>
+<ul>
+<li>To deliver and maintain our video streaming service</li>
+<li>To personalize your experience</li>
+<li>To communicate with you about our services</li>
+<li>To analyze usage patterns and improve our platform</li>
+</ul>
+<h2>Data Protection</h2>
+<p>We implement appropriate security measures to protect your personal information against unauthorized access.</p>
+<h2>Your Rights</h2>
+<p>You have the right to access, update, or delete your personal information at any time.</p>
+<h2>Contact Us</h2>
+<p>If you have questions about this Privacy Policy, please contact us at privacy@viralvideos.com</p>
+</div>
+</section>
+<!-- Terms & Conditions Section -->
+<section class="page-section" id="terms-conditions">
+<div class="page-header">
+<h1>Terms &amp; Conditions</h1>
+</div>
+<div class="page-content">
+<h2>Acceptance of Terms</h2>
+<p>By accessing and using Viral Videos, you accept and agree to be bound by the terms and provision of this agreement.</p>
+<h2>Use License</h2>
+<p>We grant you a limited, non-exclusive, non-transferable, and revocable license to use our service.</p>
+<h2>User Responsibilities</h2>
+<p>As a user, you agree to:</p>
+<ul>
+<li>Provide accurate information</li>
+<li>Not share your account credentials</li>
+<li>Not upload inappropriate content</li>
+<li>Respect intellectual property rights</li>
+<li>Comply with all applicable laws</li>
+</ul>
+<h2>Content Guidelines</h2>
+<p>Users must not upload content that is:</p>
+<ul>
+<li>Illegal or harmful</li>
+<li>Violent or explicit</li>
+<li>Infringing on copyrights</li>
+<li>Spam or misleading</li>
+</ul>
+<h2>Account Termination</h2>
+<p>We reserve the right to terminate accounts that violate these terms.</p>
+<h2>Changes to Terms</h2>
+<p>We may update these terms periodically. Continued use constitutes acceptance of changes.</p>
+</div>
+</section>
+<!-- Disclaimer Section -->
+<section class="page-section" id="disclaimer">
+<div class="page-header">
+<h1>Disclaimer</h1>
+</div>
+<div class="page-content">
+<h2>Content Accuracy</h2>
+<p>The information on this website is provided on an "as is" basis. We make no warranties about the accuracy or reliability of content.</p>
+<h2>Third-Party Content</h2>
+<p>Our platform may contain links to third-party websites. We are not responsible for the content or practices of external sites.</p>
+<h2>Service Availability</h2>
+<p>We do not guarantee uninterrupted service availability and may experience technical difficulties.</p>
+<h2>User Discretion</h2>
+<p>Users are responsible for their own judgment when viewing content. Parental guidance is recommended for minors.</p>
+<h2>Limitation of Liability</h2>
+<p>Viral Videos shall not be liable for any damages arising from the use of our service.</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="page-section" id="contact">
+<div class="page-header">
+<h1>Contact Us</h1>
+</div>
+<div class="page-content">
+<h2>Get in Touch</h2>
+<p>We value your feedback and are here to help with any questions or concerns.</p>
+<form class="contact-form">
+<div class="form-group">
+<label for="name">Your Name</label>
+<input id="name" name="name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<input id="subject" name="subject" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" required=""></textarea>
+</div>
+<button class="submit-btn" type="submit">Send Message</button>
+</form>
+<h2>Other Ways to Reach Us</h2>
+<p><strong>Email:</strong> support@viralvideos.com</p>
+<p><strong>Phone:</strong> +1 (555) 123-4567</p>
+<p><strong>Address:</strong> 123 Viral Street, Internet City, Web State 12345</p>
+</div>
+</section>
+<section class="categories">
+<h2>🎯 Browse Categories</h2>
+<div class="category-grid">
+<div class="category-card">
+<h3>😂 Comedy</h3>
+<p>Funny moments &amp; jokes</p>
+</div>
+<div class="category-card">
+<h3>🎮 Gaming</h3>
+<p>Gameplays &amp; highlights</p>
+</div>
+<div class="category-card">
+<h3>🎵 Music</h3>
+<p>Music videos &amp; performances</p>
+</div>
+<div class="category-card">
+<h3>🏃 Sports</h3>
+<p>Sports highlights &amp; moments</p>
+</div>
+<div class="category-card">
+<h3>🍔 Food</h3>
+<p>Cooking &amp; food reviews</p>
+</div>
+<div class="category-card">
+<h3>✈️ Travel</h3>
+<p>Travel vlogs &amp; guides</p>
+</div>
+<div class="category-card">
+<h3>🐾 Animals</h3>
+<p>Cute &amp; funny animal videos</p>
+</div>
+<div class="category-card">
+<h3>💡 Life Hacks</h3>
+<p>Tips &amp; tricks for life</p>
+</div>
+</div>
+</section>
+<section class="features">
+<h2>✨ Why Choose Viral Videos?</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">🚀</div>
+<h3>Lightning Fast</h3>
+<p>Buffer-free streaming with our optimized video delivery system for the best viewing experience.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🔥</div>
+<h3>Always Trending</h3>
+<p>Stay updated with the latest viral content updated daily from around the world.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🎨</div>
+<h3>Premium Quality</h3>
+<p>High-definition videos with crystal clear audio for an immersive entertainment experience.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📱</div>
+<h3>Mobile Friendly</h3>
+<p>Watch anywhere, anytime on any device with our responsive design and mobile apps.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🌍</div>
+<h3>Global Content</h3>
+<p>Access viral videos from every corner of the world with multilingual support.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🔒</div>
+<h3>Safe &amp; Secure</h3>
+<p>Enjoy content in a secure environment with advanced privacy protection.</p>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h3>About Viral Videos</h3>
+<p>Your premium destination for the hottest trending videos and viral content from around the world.</p>
+<p> 2026 Viral Videos. All rights reserved.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<p><a href="#">Home</a></p>
+<p><a href="#videos">Videos</a></p>
+<p><a href="#categories">Categories</a></p>
+<p><a href="#features">Features</a></p>
+</div>
+<div class="footer-section">
+<h3>Legal</h3>
+<li><a href="#privacy-policy">Privacy Policy</a></li>
+<li><a href="#terms-conditions">Terms &amp; Conditions</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#contact">Contact</a></li>
+</div>
+<div class="footer-section">
+<h3>Connect</h3>
+<p><a href="#">Contact Us</a></p>
+<p><a href="#">Support</a></p>
+<p><a href="#">Advertise</a></p>
+<p><a href="#">Partners</a></p>
+</div>
+</div>
+<div class="footer-bottom">
+<p> The hottest viral videos platform | Watch trending content daily</p>
+</div>
+</footer>
+<script>
+        // Slider functionality
+        let currentSlide = 0;
+        const totalSlides = 5;
+        const interval = 3000;
+
+        function nextSlide() {
+            const slider = document.getElementById('slider');
+            if (slider) {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+        }
+
+        // Initialize slider when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('slider');
+            if (slider) {
+                slider.style.transform = 'translateX(0)';
+                setInterval(nextSlide, interval);
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Page navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Handle navigation clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            // Privacy Policy link
+            const privacyLinks = document.querySelectorAll('a[href="#privacy-policy"]');
+            privacyLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('privacy-policy');
+                });
+            });
+
+            // Terms & Conditions link
+            const termsLinks = document.querySelectorAll('a[href="#terms-conditions"]');
+            termsLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('terms-conditions');
+                });
+            });
+
+            // Disclaimer link
+            const disclaimerLinks = document.querySelectorAll('a[href="#disclaimer"]');
+            disclaimerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('disclaimer');
+                });
+            });
+
+            // Contact link
+            const contactLinks = document.querySelectorAll('a[href="#contact"]');
+            contactLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showPage('contact');
+                });
+            });
+
+            // Home link
+            const homeLinks = document.querySelectorAll('a[href="#"], a[href="#home"]');
+            homeLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Hide all pages and show main content
+                    const pages = document.querySelectorAll('.page-section');
+                    pages.forEach(page => page.classList.remove('active'));
+                    window.scrollTo(0, 0);
+                });
+            });
+        });
+    </script>
+<script src="https://pl28487080.effectivegatecpm.com/a6/13/06/a61306f51ba70b772268f0e6350fdd35.js"></script></body>
+</html>
